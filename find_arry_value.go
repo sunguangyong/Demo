@@ -31,9 +31,8 @@ func SearchValues(cancel context.CancelFunc, int_arry []int, start, end, value i
 func GetIntArrys()(intArr [] int){
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i <1000000; i++ {
-		intArr = append(intArr, i)
+		intArr = append(intArr, rand.Int())
 	}
-	intArr = append(intArr,8)
 	return intArr
 }
 
